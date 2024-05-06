@@ -766,6 +766,10 @@ video {
   max-width: 300px;
 }
 
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
 .origin-top-left {
   transform-origin: top left;
 }
@@ -903,6 +907,11 @@ video {
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 78 59 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1314,4 +1323,28 @@ body {
   .xl\:w-10\/12 {
     width: 83.333333%;
   }
+}
+
+ol {
+  list-style: none; /* Menghilangkan gaya bawaan */
+}
+
+ol li:before {
+  content: "•"; /* Isi konten dengan karakter titik */
+  margin-right: 8px; /* Memberikan jarak di antara titik dan teks */
+  color: white; /* Opsional: atur warna titik */
+}
+
+li {
+  margin-bottom: 12px; /* Memberikan jarak antara item daftar */
+  color: white;
+  font-size: medium;
+  max-width: 48rem;
+  text-align: justify; /* Ratakan teks */
+  text-indent: -15px;
+}
+
+.list-margin ol {
+  margin-left: 20px; /* Sesuaikan jarak sesuai kebutuhan */
+  margin-right: 20px; /* Sesuaikan jarak sesuai kebutuhan */
 }
